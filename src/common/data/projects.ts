@@ -33,8 +33,13 @@ export const projects: Project = {
     link: "https://github.com/naibyaguilar/FemsJup",
   },
   "React Native Course": {
-    desc: "A complete course on Udemy taught by Fernando Herrera that teaches how to build native apps for iOS and Android using React Native.",
+    desc: "A complete course on Udemy taught by Fernando Herrera that teaches how to build native apps for iOS and Android using React Native",
     techStack: "React Native, TypeScript",
     link: "https://github.com/naibyaguilar/Introduction_React-Native",
+  },
+  "portfolio-app": {
+    desc: "A web page for my portfolio",
+    techStack: "NextJs, TypeScript",
+    link: "https://github.com/naibyaguilar/portfolio-app",
   },
 };
