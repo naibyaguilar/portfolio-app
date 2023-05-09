@@ -1,0 +1,19 @@
+#credits {
+  height: 100%;
+  margin-top: 10rem;
+}
+
+.ending-credits {
+  font-family: "NTR", sans-serif;
+  color: #ccd6f6;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  padding-bottom: 40px;
+}
+.a {
+  text-decoration: none;
+  color: #8892b0;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
