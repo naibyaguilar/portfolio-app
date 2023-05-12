@@ -5,7 +5,7 @@ export const experiences: Experience = {
     jobs: {
       Stackit: {
         jobTitle: "React/NodeJS Developer",
-        duration: "e 2023 - Apr 2023",
+        duration: "Jan 2023 - Apr 2023",
         desc: [
           "Design and develop front-end interfaces and module logic in monorepo projects, using technologies such as TypeScript, NexJS, NestJS, NodeJS, and UI libraries like ReduxToolkit and Inquirer.",
           "Write comprehensive unit tests for all modules to ensure code quality and prevent errors, using Jest and other testing frameworks as needed.",
@@ -14,6 +14,7 @@ export const experiences: Experience = {
           "Write modern, performant, and maintainable code for a diverse range of client and internal projects, using best practices and agile development methodologies.",
         ],
         location: "San Diego, California",
+        mood: "Remote",
       },
 
       DIGIVET: {
@@ -27,6 +28,7 @@ export const experiences: Experience = {
           "Updated the 4D Write Pro format to manage documents with code in less time, increasing productivity and reducing the risk of errors.",
         ],
         location: "Caen, France",
+        mood: "Hybrid",
       },
       "Twosoft.com": {
         jobTitle: "Mobile Developer",
@@ -38,6 +40,7 @@ export const experiences: Experience = {
           "Worked closely with designers, back-end developers, and product managers to deliver high-quality mobile applications that met customer needs and requirements.",
         ],
         location: "Mérida, Mexico",
+        mood: "Remote",
       },
     },
   },
@@ -55,6 +58,7 @@ export const experiences: Experience = {
           "Escribir código moderno, performante y mantenible para una diversa gama de proyectos internos y de clientes, utilizando las mejores prácticas y metodologías de desarrollo ágil.",
         ],
         location: "San Diego, California",
+        mood: "Remoto",
       },
 
       DIGIVET: {
@@ -68,6 +72,7 @@ export const experiences: Experience = {
           "Actualizado el formato 4D Write Pro para gestionar documentos con código en menos tiempo, aumentando la productividad y reduciendo el riesgo de errores.",
         ],
         location: "Caen, France",
+        mood: "Híbrido",
       },
       "Twosoft.com": {
         jobTitle: "Desarrolladora móvil",
@@ -79,6 +84,7 @@ export const experiences: Experience = {
           "Trabajé en estrecha colaboración con diseñadores, desarrolladores de back-end y gerentes de producto para entregar aplicaciones móviles de alta calidad que cumplieran con las necesidades y requisitos de los clientes.",
         ],
         location: "Mérida, Mexico",
+        mood: "Remoto",
       },
     },
   },
@@ -96,6 +102,7 @@ export const experiences: Experience = {
           "Rédiger un code moderne, performant et facile à maintenir pour une gamme variée de projets clients et internes, en utilisant les meilleures pratiques et les méthodologies de développement agile.",
         ],
         location: "San Diego, California",
+        mood: "Télétravail",
       },
 
       DIGIVET: {
@@ -109,6 +116,7 @@ export const experiences: Experience = {
           "Mise à jour du format 4D Write Pro pour gérer les documents avec du code en moins de temps, ce qui augmente la productivité et réduit le risque d'erreurs.",
         ],
         location: "Caen, France",
+        mood: "Hybride",
       },
       "Twosoft.com": {
         jobTitle: "Développeur mobile",
@@ -120,6 +128,7 @@ export const experiences: Experience = {
           "J'ai travaillé en étroite collaboration avec les concepteurs, les développeurs back-end et les chefs de produit pour fournir des applications mobiles de haute qualité qui répondent aux besoins et aux exigences des clients.",
         ],
         location: "Mérida, Mexico",
+        mood: "Télétravail",
       },
     },
   },

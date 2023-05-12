@@ -64,7 +64,7 @@ export function JobsList() {
         {Object.keys(experiences[languages[index].language].jobs).map(
           (key, i) => (
             <Tab
-              label={key}
+              label={isHorizontal ? `0${i + 1}.` : key}
               {...a11yProps(i)}
               sx={{
                 fontFamily: "NTR",
@@ -82,22 +82,32 @@ export function JobsList() {
           <TabPanel value={value} index={i} isHorizontal={!isHorizontal}>
             <div className={styles["joblist"]}>
               <div className={styles["joblist-heading"]}>
+                {isHorizontal && (
+                  <>
+                    <span className={styles["joblist-job-company"]}>{key}</span>
+                    <br />
+                  </>
+                )}
                 <span className={styles["joblist-job-title"]}>
-                  {experiences[languages[index].language].jobs[key][
-                    "jobTitle"
-                  ] + " "}
+                  {experiences[languages[index].language].jobs[key].jobTitle}
                 </span>
                 <br />
-                <span className={styles["joblist-job-company"]}>
-                  {experiences[languages[index].language].jobs[key]["location"]}
-                </span>
+                <div className={styles["joblist-job-company"]}>
+                  {experiences[languages[index].language].jobs[key].location +
+                    " "}
+                  <span className={styles["joblist-duration"]}>
+                    {"(" +
+                      experiences[languages[index].language].jobs[key].mood +
+                      ")"}
+                  </span>
+                </div>
                 <div className={styles["joblist-duration"]}>
-                  {experiences[languages[index].language].jobs[key]["duration"]}
+                  {experiences[languages[index].language].jobs[key].duration}
                 </div>
               </div>
               <div className={styles["joblist-content"]}>
                 <ul className={styles["job-description"]}>
-                  {experiences[languages[index].language].jobs[key]["desc"].map(
+                  {experiences[languages[index].language].jobs[key].desc.map(
                     function (descItem, i) {
                       return (
                         <div>

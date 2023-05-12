@@ -131,7 +131,7 @@ a:hover {
     height: unset !important;
     flex-direction: column !important;
   }
-  .makeStyles-root-1 {
+  [class^="makeStyles-root-"] {
     height: unset !important;
     width: unset;
     flex-direction: column;

@@ -4,5 +4,6 @@ export type Jobs = {
     duration: string;
     desc: string[];
     location: string;
+    mood: string;
   };
 };
