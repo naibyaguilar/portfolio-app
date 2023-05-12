@@ -1,13 +1,18 @@
 /* eslint-disable react/jsx-key */
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "@/styles/about.module.css";
 import person from "../assets/images/person.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
 import { tech_stack } from "@/common/data/techStack";
+import { about } from "@/common/data/about";
+import { languages } from "@/common/data/languages";
+import { useAppSelector } from "@/store/hooks/useAppSelector";
 
 export function About() {
+  const { index } = useAppSelector((state) => state.app);
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -21,7 +26,8 @@ export function About() {
         data-aos-duration="1000"
       >
         <hr />
-        <span className={styles["about-num"]}>{"// 01. "}</span> {"<About Me/>"}{" "}
+        <span className={styles["about-num"]}>{"// 01. "}</span>{" "}
+        {about[languages[index].language].heading}
         <hr />
       </div>
       <div className={styles["container"]}>
@@ -38,24 +44,20 @@ export function About() {
           data-aos-duration="2000"
           data-aos-delay="50"
         >
-          If there&apos;s one thing that excites me, it&apos;s creating software
-          products that is both beautiful and functional... I am a
+          {about[languages[index].language].description}
           <span className={styles["highlight"]}>
-            {" "}
-            Multi-platform software Engineer{" "}
+            {about[languages[index].language].light[0]}
           </span>
-          with over
+          {about[languages[index].language].with}
           <span className={styles["highlight"]}>
-            {" "}
-            2+ experience in development
+            {about[languages[index].language].light[1]}
           </span>{" "}
-          I am passionate about learning and using programming best practices to
-          create scalable and usable software.. I am currently{" "}
+          {about[languages[index].language].learning}
           <span className={styles["highlight"]}>
-            open to new opportunities so feel free to reach out.
+            {about[languages[index].language].light[2]}
           </span>
           <div className={styles["about-description"]}>
-            {"Here are some technologies I have been working with:"}
+            {about[languages[index].language].here}
             <ul
               className={styles["tech-stack"]}
               data-aos="fade-up"
@@ -64,9 +66,7 @@ export function About() {
               {tech_items}
             </ul>
           </div>
-          <br />I am always willing to step out of my comfort zone to gain new
-          experiences and achieve my goals. I&apos;m highly motivated, committed
-          and focused on delivering quality work.
+          <br /> {about[languages[index].language].motivation}
         </p>
       </div>
     </div>

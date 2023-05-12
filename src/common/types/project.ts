@@ -1,8 +1,9 @@
+import { Repositories } from "./repositories";
+
 export type Project = {
-  [key: string]: {
-    desc: string;
-    techStack: string;
-    link: string;
-    open?: string;
+  [language: string]: {
+    heading: string;
+    subheading: string;
+    repositories: Repositories;
   };
 };

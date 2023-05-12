@@ -1,8 +1,8 @@
+import { Jobs } from "./jobs";
+
 export type Experience = {
-  [key: string]: {
-    jobTitle: string;
-    duration: string;
-    desc: string[];
-    location: string;
+  [language: string]: {
+    heading: string;
+    jobs: Jobs;
   };
 };

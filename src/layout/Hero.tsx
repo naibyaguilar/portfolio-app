@@ -6,10 +6,13 @@ import { IoMdMail } from "react-icons/io";
 import { Box, Collapse, Alert, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import Typed from "react-typed";
+import { hero } from "../common/data/hero";
+import { useAppSelector } from "@/store/hooks/useAppSelector";
+import { languages } from "@/common/data/languages";
 
 export function Hero() {
   const [open, setOpen] = useState(false);
-
+  const { index } = useAppSelector((state) => state.app);
   useEffect(() => {
     AOS.init();
   }, []);
@@ -24,11 +27,11 @@ export function Hero() {
             data-aos-duration="2000"
             data-aos-delay="50"
           >
-            Hi, my name is
+            {hero[languages[index].language].light[0]}
           </span>
           <br />
           <Typed
-            strings={["Naiby Aguilar"]}
+            strings={[hero[languages[index].language].name]}
             loop={false}
             className={styles["textTwo"]}
           />
@@ -39,12 +42,21 @@ export function Hero() {
           data-aos-duration="2000"
           data-aos-delay="50"
         >
-          I&apos;m a <span className={styles["light"]}>software engineer </span>
-          based in
-          <span className={styles["light"]}> Yucatán, México.</span> Although my
-          career path started as an accident, I discovered in technology the
-          opportunity to do something I&apos;m{" "}
-          <span className={styles["light"]}>passionate </span>about.
+          {hero[languages[index].language].me}
+          <span className={styles["light"]}>
+            {" "}
+            {hero[languages[index].language].light[1]}{" "}
+          </span>
+          {hero[languages[index].language].base}
+          <span className={styles["light"]}>
+            {" "}
+            {hero[languages[index].language].light[2]}
+          </span>{" "}
+          {hero[languages[index].language].career}
+          <span className={styles["light"]}>
+            {" "}
+            {hero[languages[index].language].light[3]}{" "}
+          </span>
         </h2>
         <br />
         <h2
@@ -53,9 +65,11 @@ export function Hero() {
           data-aos-duration="2000"
           data-aos-delay="50"
         >
-          I love <span className={styles["light"]}>Frontend development </span>{" "}
-          because it gives me the opportunity to combine my love for design with
-          coding.
+          {hero[languages[index].language].love}
+          <span className={styles["light"]}>
+            {hero[languages[index].language].light[4]}
+          </span>
+          {hero[languages[index].language].opportunity}
         </h2>
         <Box
           sx={{ width: "100%" }}

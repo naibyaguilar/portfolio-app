@@ -8,6 +8,7 @@ import BackgroundGeometry from "@/components/BackgroundGeometry";
 import { useEffect, useState } from "react";
 import isElementInViewport from "@/common/utils/isElementInViewport";
 import styles from "@/styles/hero.module.css";
+import { languages } from "@/common/data/languages";
 
 interface Props {
   children: React.ReactNode;
@@ -15,6 +16,8 @@ interface Props {
 
 function Wrapper({ children }: Props): React.ReactElement {
   const [section, setSection] = useState(true);
+  const [index, setIndex] = useState(0);
+
   const handleScroll = () => {
     const hero = document.getElementById(styles["hero"]);
     const isHeroVisible = isElementInViewport(hero);

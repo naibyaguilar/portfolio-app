@@ -56,6 +56,11 @@
   color: #0a192f;
   border: 0.1rem solid #0a192f;
 }
+.flag {
+  background: #ae7dff;
+  color: #0a192f;
+  border: 0.1rem solid #0a192f;
+}
 @media (min-width: 0px) and (max-width: 768px) {
   .nav-wrapper {
     display: flex;

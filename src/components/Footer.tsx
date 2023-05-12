@@ -3,8 +3,12 @@ import styles from "@/styles/footer.module.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { footer } from "@/common/data/footer";
+import { languages } from "@/common/data/languages";
+import { useAppSelector } from "@/store/hooks/useAppSelector";
 
 export function Footer() {
+  const { index } = useAppSelector((state) => state.app);
   useEffect(() => {
     AOS.init();
   }, []);
@@ -16,7 +20,7 @@ export function Footer() {
         data-aos-duration="1000"
         data-aos-delay="50"
       >
-        <div>Thank you for coming here </div>
+        <div>{footer[languages[index].language].text}</div>
       </div>
     </div>
   );

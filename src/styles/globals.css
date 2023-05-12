@@ -82,12 +82,16 @@ a:hover {
   outline: none !important;
   color: #ccd6f6 !important;
 }
-.makeStyles-root-1 {
+[class^="makeStyles-root-"] {
   height: unset !important;
   flex-direction: column;
   justify-content: center;
   flex-grow: 1 !important;
   padding-left: 7%;
+}
+.jss1 {
+  height: unset !important;
+  flex-direction: column !important;
 }
 
 .PrivateTabIndicator-colorSecondary-5 {
@@ -136,7 +140,7 @@ a:hover {
     width: 0 !important;
   }
 }
-a .active {
+a:active {
   background-color: #0a192f;
   margin-top: 0;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);

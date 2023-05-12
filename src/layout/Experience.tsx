@@ -12,8 +12,7 @@ export function Experience() {
       <div
         className={styles["experience-heading"]}
         data-aos="fade-up"
-        data-aos-duration="2000"
-        data-aos-delay="50"
+        data-aos-duration="1000"
       >
         <hr />
         <span className={styles["experience-num"]}>{"// 02. "}</span>{" "}
