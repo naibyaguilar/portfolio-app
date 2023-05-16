@@ -13,7 +13,7 @@ export const about: About = {
     with: " with over ",
     learning:
       "I am passionate about learning and using programming best practices to create scalable and usable software.. I am currently ",
-    here: "Here are some technologies I have been working with:",
+    here: "Here are some technologies I have been working with: ",
     motivation:
       " I am always willing to step out of my comfort zone to gain new experiences and achieve my goals. I'm highly motivated, committed and focused       on delivering quality work.",
   },
@@ -26,7 +26,7 @@ export const about: About = {
       "2 años experiencia en desarrollo",
       "abierta a nuevas oportunidades así que no dudes en contactarme.",
     ],
-    with: "con más de ",
+    with: " con más de ",
     learning:
       "Me apasiona aprender y utilizar las mejores prácticas de programación para crear software escalable y usable.. Actualmente estoy ",
     here: "He aquí algunas tecnologías con las que he estado trabajando:",

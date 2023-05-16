@@ -167,7 +167,11 @@ export function Navbar() {
               data-aos-delay="200"
             >
               <a
-                href="/NAIBY AGUILAR SOFTWARE ENGINEER RESUME.pdf"
+                href={
+                  "/resumen/NAIBY AGUILAR SOFTWARE ENGINEER " +
+                  languages[index].language +
+                  " .pdf"
+                }
                 target="_blank"
               >
                 <button className={styles["btn"]}>

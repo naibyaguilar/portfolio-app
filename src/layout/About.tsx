@@ -68,6 +68,7 @@ export function About() {
           </div>
           <br /> {about[languages[index].language].motivation}
         </p>
+        <br />
       </div>
     </div>
   );
