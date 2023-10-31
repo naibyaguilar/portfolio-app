@@ -15,6 +15,10 @@ export const projects: Project = {
         desc: "A mobile application that allows for the management of events and attendees",
         techStack: "Flutter, Dart",
         link: "https://gitlab.com/naibyaguilar/thevent",
+        portfolio: {
+          subheading: "mobile application",
+          videos: ["/videos/thevent.mp4"],
+        },
       },
       "Motion nene": {
         desc: "A mobile application that helps parents detect their baby's movements using a sensor.",

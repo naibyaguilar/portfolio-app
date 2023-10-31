@@ -51,12 +51,16 @@ export function Projects() {
                   </div>
                   <ExternalLink
                     githubLink={
-                      projects[languages[index].language].repositories[key][
-                        "link"
-                      ]
+                      projects[languages[index].language].repositories[key].link
                     }
                     openLink={
                       projects[languages[index].language].repositories[key].open
+                    }
+                    portfolio={
+                      projects[languages[index].language].repositories[key]
+                        .portfolio
+                        ? `/project/${key}`
+                        : ""
                     }
                   ></ExternalLink>
                 </div>
